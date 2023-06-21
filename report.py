@@ -83,7 +83,7 @@ def format_inspection(df):
 
 
 def create_home_report(key, model, pdf_link):
-    prompt_examples = read_file_contents("prompt_intro.txt")
+    prompt_examples = read_file_contents("static/prompt_intro.txt")
     content_message, instruction_response = get_content_instruction()
 
     emd = embedder.PDFEmbeddings(pdf_path=pdf_link, openai_key=key,
