@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block content %}
+
+<style>
+    body {
+        background-image: url("static/home_repair.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+
+<!-- Begin page content -->
+<div class="container d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+    <h1 class="text-center py-5" style="color: white;  font-weight: bold; font-size: 4rem; text-shadow: 2px 2px 2px gray;">Processing Complete</h1>
+    <div class="d-flex justify-content-center pb-5">
+         <a class="btn btn-primary btn-lg" href="{{ url_for('completed', csv_file=csv_file) }}">Download CSV</a>
+    </div>
+</div>
+
+{% endblock %}

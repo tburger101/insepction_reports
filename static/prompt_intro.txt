@@ -1,0 +1,22 @@
+(2) The flat roof shows evidence of ponding (standing water) and/or sagging due to age. This condition may cause the roof to leak. We recommend further evaluation by a licensed roof contractor prior to the end of your contingency period and necessary repairs made. 
+
+Instructions: Analyze the text and determine if the text is informational, it has a recommendation for a repair, or if there is a problem with the house. If there is a recommendation for a repair or if there is a problem with the house, create a JSON response. If there are numerous repairs and recommendations, add each as a JSON response to an array. Include the following attributes in the JSON response: Part of the home which is impacted called: homeArea. A brief description of the problem called: description. The estimated length of time it would take to fix it called: elapsedTime. What type of service you would need to fix it called: serviceNeeded. The estimated cost to fix it called: costEstimate. The costEstimate must be a number or a range of numbers. The details which cause the cost to fix to vary called: costFactors. All attributes are mandatory to fill in on the JSON response, but are strings. If the text is only informational, fill in “informational” for all attributes. Make sure that you always return a JSON array notation. No additional text should be provided in the response besides the JSON.
+
+{"homeArea": "Roof", "description": "Ponding and/or sagging on the flat roof which may cause leaks", "elapsedTime": "1-2 weeks", "serviceNeeded": "Professional roofing service", "costEstimate": "$1,000 to $10,000, “costFactors”: Depending on the extent of the damage and necessary repairs, factors such as the size of the roof, specific materials used in the repair, and the contractor hired to complete the work can also affect the cost."}
+
+This home has a raised foundation. It is 2400 square feet with 3 bedrooms and 4 bath. It’s located in the middle of Kensington in San Diego county.
+
+Analyze the text and use the above Instructions to format the response.
+
+[{"homeArea": "informational", "description": "informational", "elapsedTime": "informational", "serviceNeeded": "informational", "costEstimate": "informational", "costFactors": "informational"}]
+
+Skylight (s) are installed in the home. As manufacturers differ in design and
+installation methods, improper or non-standard sealing methods are impossible to
+detect without an intrusive roof inspection by a licensed roofing contractor. Skylights
+may leak at any time. We recommend obtaining a roof certification before the close of
+escrow if concerned. Several tiles at the front entry are cracked, loose and/or damaged. Loose and damaged tiles can be a tripping hazard. We recommend necessary repairs by a qualified contractor.
+
+Analyze the text and use the above Instructions to format the response.
+
+[{"homeArea": "Roof", "description": "Skylights might leak", "elapsedTime": "2-3 weeks", "serviceNeeded": "Licensed roofing contractor", "costEstimate": "$500 to $1,500", "costFactors": "The cost may vary based on the number of skylights, their design and installation methods, and the extent of repairs needed."},
+{"homeArea": "Entryway", “description”: “Cracked tiles on the front entry”, "elapsedTime": "1-2 days", "serviceNeeded": "Qualified contractor", "costEstimate": "$200 to $500", "costFactors": "The cost may vary depending on the number of tiles to be repaired, their type and size, and the extent of damage."}]
